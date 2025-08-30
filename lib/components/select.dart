@@ -95,7 +95,7 @@ class FilterChipFixedWidth extends StatefulWidget {
 }
 
 class _FilterChipFixedWidthState extends State<FilterChipFixedWidth> {
-  get selected => widget.selected;
+  bool get selected => widget.selected;
 
   double? labelWidth;
 

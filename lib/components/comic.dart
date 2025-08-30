@@ -1492,7 +1492,7 @@ class _RatingWidgetState extends State<RatingWidget> {
     );
   }
 
-  pointValue(double dx) {
+  void pointValue(double dx) {
     if (!widget.selectable) {
       return;
     }
