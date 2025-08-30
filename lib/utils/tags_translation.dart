@@ -105,7 +105,7 @@ extension TagsTranslation on String{
 
   String get translateTagsCategoryToCN => tagsCategoryTranslations[this]??this;
 
-  get tagsCategoryTranslations => switch(App.locale.countryCode){
+  Map<String, String> get tagsCategoryTranslations => switch(App.locale.countryCode){
     "CN" => tagsCategoryTranslationsCN,
     "TW" => tagsCategoryTranslationsTW,
     _ => tagsCategoryTranslationsCN
