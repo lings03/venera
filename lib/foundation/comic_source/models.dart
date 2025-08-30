@@ -369,7 +369,7 @@ class ComicChapters {
     }
   }
 
-  static fromJsonOrNull(dynamic json) {
+  static ComicChapters? fromJsonOrNull(dynamic json) {
     if (json == null) return null;
     return ComicChapters.fromJson(json);
   }

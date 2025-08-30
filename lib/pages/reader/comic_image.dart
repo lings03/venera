@@ -86,7 +86,7 @@ class _ComicImageState extends State<ComicImage> with WidgetsBindingObserver {
 
   static final Map<int, Size> _cache = {};
 
-  static clear() => _cache.clear();
+  static void clear() => _cache.clear();
 
   @override
   void initState() {
