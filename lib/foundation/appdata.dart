@@ -196,11 +196,11 @@ class Settings with ChangeNotifier {
     'autoCloseFavoritePanel': false,
   };
 
-  operator [](String key) {
+  dynamic operator [](String key) {
     return _data[key];
   }
 
-  operator []=(String key, dynamic value) {
+  void operator []=(String key, dynamic value) {
     _data[key] = value;
     if (key != "dataVersion") {
       notifyListeners();
