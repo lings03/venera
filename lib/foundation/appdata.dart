@@ -192,6 +192,7 @@ class Settings with ChangeNotifier {
     'comicSpecificSettings': <String, Map<String, dynamic>>{},
     'ignoreBadCertificate': false,
     'readerScrollSpeed': 1.0, // 0.5 - 3.0
+    'localFavoritesFirst': true,
   };
 
   operator [](String key) {
